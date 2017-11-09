@@ -153,8 +153,8 @@ body {
 }
 /* END HOME PAGE */
 
-/* Menu categories page */
-.category-tile{
+/* MENU CATEGORIES PAGE */
+.category-tile {
   position: relative;
   border: 2px solid #3F0C1F;
   overflow: hidden;
@@ -162,11 +162,11 @@ body {
   height: 200px;
   margin: 0 auto 15px;
 }
-.category-tile span{
+.category-tile span {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 100;
+  width: 100%;
   text-align: center;
   font-size: 1.2em;
   text-transform: uppercase;
@@ -177,17 +177,17 @@ body {
 .category-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
-#menu-categories-tile + div {
+
+#menu-categories-title + div {
   margin-bottom: 50px;
 }
-/* End Munu Categories page */
+/* END MENU CATEGORIES PAGE */
 
-
-/* SINGLE CATEGORY PAGE*/
+/* SINGLE CATEGORY PAGE */
 .menu-item-tile {
   margin-bottom: 25px;
 }
-.menu-item-tile hr{
+.menu-item-tile hr {
   width: 80%;
 }
 .menu-item-tile .menu-item-price {
@@ -223,11 +223,12 @@ body {
 h3.menu-item-title {
   margin: 0 0 10px;
 }
-.menu-item-title {
+.menu-item-details {
   font-size: .9em;
   font-style: italic;
 }
-/* END SUBGKE CATEGORY PAGE */
+/* END SINGLE CATEGORY PAGE */
+
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -254,6 +255,7 @@ h3.menu-item-title {
     height: 558px;
   }
   /* End Home Page */
+}
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -331,7 +333,18 @@ h3.menu-item-title {
     width: 360px;
     margin: 0 auto 15px;
   }
+
+  .menu-item-photo {
+    margin-right: auto;
+  }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: center;;
+  }
 }
+
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
@@ -347,12 +360,13 @@ h3.menu-item-title {
     width: 280px;
     margin: 0 auto 15px;
   }
-  .col-xxs-12{
+
+  .col-xxs-12 {
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    float: right;
+    float: left;
     width: 100%;
   }
 }
